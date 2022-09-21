@@ -5,7 +5,7 @@ export const apiSlice = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "http://localhost:9000",
   }),
-  tagTypes: ["Videos"],
+  tagTypes: ["Videos", "Video", "RelatedVideos"],
   endpoints: (builder) => ({
     getVideos: builder.query({
       query: () => "/videos",
@@ -14,6 +14,9 @@ export const apiSlice = createApi({
     }),
     getVideoById: builder.query({
       query: (videoId) => `/videos/${videoId}`,
+      providesTags: (result, err, arg) => {
+        return [{ type: "Video", id: arg }];
+      },
     }),
     getRelatedVideos: builder.query({
       query: ({ id, title }) => {
@@ -21,6 +24,9 @@ export const apiSlice = createApi({
         const likes = tags.map((tag) => `title_like=${tag}&id_ne=${id}`);
         const queryString = `/videos?${likes.join("&")}&_limit=4`;
         return queryString;
+      },
+      providesTags: (result, err, arg) => {
+        return [{ type: "RelatedVideos", id: arg.id }];
       },
     }),
     addVideo: builder.mutation({
@@ -33,6 +39,29 @@ export const apiSlice = createApi({
       },
       invalidatesTags: ["Videos"],
     }),
+    editVideo: builder.mutation({
+      query: ({ id, data }) => {
+        return {
+          url: `/videos/${id}`,
+          method: "PATCH",
+          body: data,
+        };
+      },
+      invalidatesTags: (result, error, arg) => {
+        return [
+          "Videos",
+          { type: "Video", id: arg.id },
+          { type: "RelatedVideos", id: arg.id },
+        ];
+      },
+    }),
+    deleteVideo: builder.mutation({
+      query: (id) => ({
+        url: `/videos/${id}`,
+        method: "DELETE",
+      }),
+      invalidatesTags: ["Videos"],
+    }),
   }),
 });
 
@@ -41,4 +70,6 @@ export const {
   useGetVideoByIdQuery,
   useGetRelatedVideosQuery,
   useAddVideoMutation,
+  useEditVideoMutation,
+  useDeleteVideoMutation,
 } = apiSlice;

@@ -24,7 +24,6 @@ export default function Video() {
     content = <Error message="Sorry, something went wrong" />;
   }
   if (!isLoading && !isError) {
-    console.log(video);
     content = (
       <>
         <Player link={video.link} title={video.title} />

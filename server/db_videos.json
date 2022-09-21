@@ -35,12 +35,12 @@
     },
     {
       "id": 4,
-      "title": "Debounce Function in JavaScript - JavaScript Job Interview question",
+      "title": "Debounce Function in JavaScript - Advanced JavaScript Job Interview question",
       "description": "In this video, I have explained about the debounce function in JavaScript. This is a common question interviewers ask at Job Interviews. If you watch this video carefully, you will understand what is debounce and how to handle it with custom debounce function.",
       "author": "Learn with Sumit",
       "date": "Jan 06, 2022",
       "duration": "10:12",
-      "views": "2.1k",
+      "views": "3.1k",
       "link": "https://www.youtube-nocookie.com/embed/dD9O8DnIBj4",
       "thumbnail": "https://i3.ytimg.com/vi/dD9O8DnIBj4/maxresdefault.jpg"
     },
@@ -51,7 +51,7 @@
       "author": "Learn with Sumit",
       "date": "Nov 22, 2021",
       "duration": "10:12",
-      "views": "2.1k",
+      "views": "2.9k",
       "link": "https://www.youtube-nocookie.com/embed/4tV1Mfi4fMA",
       "thumbnail": "https://i3.ytimg.com/vi/4tV1Mfi4fMA/maxresdefault.jpg"
     },
@@ -67,18 +67,7 @@
       "thumbnail": "https://i3.ytimg.com/vi/34tjWL9wi4g/maxresdefault.jpg"
     },
     {
-      "id": 7,
-      "title": "Tailwind CSS Tutorial Bangla - Introduction to Tailwind CSS",
-      "description": "Tailwind is a utility-first CSS framework to rapidly build modern websites without ever leaving your HTML. In this Tailwind CSS tutorial, I have given a short introduction and overview of Tailwind CSS in Bangla language. Also, I have explained, why Tailwind vs Bootstrap debate should be stopped as both are useful in their own ways.",
-      "author": "Learn with Sumit",
-      "date": "Oct 15, 2021",
-      "duration": "10:12",
-      "views": "2.1k",
-      "link": "https://www.youtube-nocookie.com/embed/smDa6hoxLKI",
-      "thumbnail": "https://i3.ytimg.com/vi/smDa6hoxLKI/maxresdefault.jpg"
-    },
-    {
-      "title": "যে ১০ টি ভুল বিগিনার রিয়্যাক্ট ডেভেলপাররা করে থাকেন",
+      "title": "React Developers' common mistakes are explained!",
       "description": "যে ১০ টি ভুল বিগিনার রিয়্যাক্ট ডেভেলপাররা করে থাকেন\",\n            \"description\": \"আপনারা যারা বিগিনার হিসেবে রিয়্যাক্ট জেস নিয়ে কাজ করা শুরু করেছেন, তারা রিয়্যাক্ট এর বেশ কিছু কনসেপ্ট ঠিক মতো আয়ত্ত না করতে পারার কারণে বিচিত্র কিছু সমস্যার সম্মুখীন হন এবং শেষ পর্যন্ত বুঝতে না পেরে হতাশ হয়ে পড়েন। তাদের জন্যই এই ভিডিওটি। এই ভিডিওতে আমি এমন ১০টি সমস্যার কথা তুলে ধরেছি যেগুলো বিগিনার হিসেবে আপনারা অহরহ সম্মুখীন হবেন। আশা করি ভিডিওটি দেখলে আপনাদের এই সমস্যাগুলো নিয়ে আর কনফিউশন থাকবেনা।",
       "author": "Learn with Sumit",
       "link": "https://www.youtube-nocookie.com/embed/6O4s7v28nlw",
@@ -98,6 +87,17 @@
       "duration": "10:12",
       "views": "2.7",
       "id": 9
+    },
+    {
+      "title": "6 React Interview Questions You Have to Know",
+      "description": "Tags:\n- ReactJS Tutorial\n- ReactJS and MySQL\n- NodeJS Tutorial\n- API Tutorial",
+      "author": "PedroTech",
+      "link": "https://www.youtube.com/embed/mXxsjzgD3C",
+      "thumbnail": "https://i.ytimg.com/vi/mXxsjzgD3CI/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLASCWaW7f_xUwLzIPE7MdUiyB0uyg",
+      "date": "12 Feb, 2022",
+      "duration": "13:10",
+      "views": "31.5k",
+      "id": 10
     }
   ]
 }
